@@ -160,7 +160,7 @@
 
 #define BG_BUILD(cbb, sbb, size, bpp, prio, mos, wrap)		\
 (															\
-	   ((size)<<14)  | (((wrap)&1)<<13) | (((sbb)&31)<<8	\
+	   ((size)<<14)  | (((wrap)&1)<<13) | (((sbb)&31)<<8)	\
 	| (((bpp)&8)<<4) | (((mos)&1)<<6)   | (((cbb)&3)<<2)	\
 	| ((prio)&3)											\
 )
