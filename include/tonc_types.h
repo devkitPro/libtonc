@@ -185,8 +185,10 @@ typedef struct { u32 data[16]; } TILE8;
 
 
 #ifndef __cplusplus
+#ifndef __bool_true_false_are_defined
 //! Boolean type
 typedef enum { false, true } bool;
+#endif
 #endif
 
 #ifndef BOOL
