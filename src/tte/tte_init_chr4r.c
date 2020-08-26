@@ -58,11 +58,11 @@ void tte_init_chr4r(int bgnr, u16 bgcnt, u16 se0, u32 cattrs, u32 clrs,
 	REG_BGCNT[bgnr]= bgcnt;
 
 	// --- Init color attribute ---
-	u32 ink, shadow, paper, spec;
+	u32 ink, shadow, paper; //spec;
 	ink=	 cattrs     & 15;
 	shadow=	(cattrs>> 8)& 15;
 	paper=	(cattrs>>16)& 15;
-	spec=   (cattrs>>24)&255;
+	//spec=   (cattrs>>24)&255;
 
 	tc->cattr[TTE_INK]= ink;
 	tc->cattr[TTE_SHADOW]= shadow;
