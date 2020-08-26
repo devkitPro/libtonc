@@ -28,7 +28,7 @@ IARCH		:= -mthumb-interwork -marm
 bTEMPS		:= 0	# Save gcc temporaries (.i and .s files)
 bDEBUG2		:= 0	# Generate debug info (bDEBUG2? Not a full DEBUG flag. Yet)
 
-VERSION		:=	1.4.3
+VERSION		:=	1.4.4
 
 #---------------------------------------------------------------------------------
 # Options for code generation
