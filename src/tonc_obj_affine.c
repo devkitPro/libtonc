@@ -19,7 +19,7 @@
 // FUNCTIONS 
 // --------------------------------------------------------------------
 
-void obj_aff_copy(OBJ_AFFINE *dst, const OBJ_AFFINE *src, u32 count)
+void obj_aff_copy(OBJ_AFFINE *dst, const OBJ_AFFINE *src, uint count)
 {
 	int ii;
 	for(ii=0; ii<count; ii++)

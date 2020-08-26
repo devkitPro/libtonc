@@ -25,7 +25,7 @@ const u8 oam_sizes[3][4][2]=
 
 const BG_AFFINE bg_aff_default= { 256, 0, 0, 256, 0, 0 };
 
-const u32 __snd_rates[12]=
+const uint __snd_rates[12]=
 {
 	8013, 7566, 7144, 6742, // C , C#, D , D#
 	6362, 6005, 5666, 5346, // E , F , F#, G

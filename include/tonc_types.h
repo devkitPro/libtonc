@@ -15,6 +15,8 @@
 #ifndef TONC_TYPES
 #define TONC_TYPES
 
+#include <stdint.h>
+#include <stdbool.h>
 
 /*!	\defgroup grpTypes	Types and attributes	*/
 
@@ -115,15 +117,18 @@
 	</ul> 
 */
 //\{
-typedef unsigned char  u8,  byte, uchar, echar;
-typedef unsigned short u16, hword, ushort, eshort;
-typedef unsigned int   u32, word, uint, eint;
-typedef unsigned long long u64;
+typedef unsigned int   uint, eint;
+typedef unsigned short ushort, eshort;
 
-typedef signed char  s8;
-typedef signed short s16;
-typedef signed int   s32;
-typedef signed long long s64;
+typedef uint8_t  u8,  byte, uchar, echar;
+typedef uint16_t u16, hword;
+typedef uint32_t u32, word;
+typedef uint64_t u64;
+
+typedef int8_t  s8;
+typedef int16_t s16;
+typedef int32_t s32;
+typedef int64_t s64;
 //\}
 
 /*! \name Volatile types
@@ -182,12 +187,6 @@ typedef struct { u32 data[8];  } TILE, TILE4;
 
 //! 8bpp tile type, for easy indexing and 8-bit tiles
 typedef struct { u32 data[16]; } TILE8;
-
-
-#ifndef __cplusplus
-//! Boolean type
-typedef enum { false, true } bool;
-#endif
 
 #ifndef BOOL
 typedef u8 BOOL;	// C++ bool == u8 too, that's why
