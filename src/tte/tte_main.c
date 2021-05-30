@@ -693,7 +693,7 @@ POINT16 tte_get_text_size(const char *str)
 	int charW, charH= tc->font->charH;
 
 	int x=0, width= 12, height= charH;
-	int ch;
+	uint ch;
 
 	while( (ch= *str++) != 0 )
 	{
@@ -721,6 +721,11 @@ POINT16 tte_get_text_size(const char *str)
 
 		// --- Normal char ---
 		default:
+
+			// Check for UTF8 code
+			if(ch>=0x80)
+				ch= utf8_decode_char(str-1, &str);
+
 			charW= tc->font->cellW;
 			if(x+charW > tc->marginRight)
 			{
