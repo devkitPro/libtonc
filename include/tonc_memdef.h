@@ -853,8 +853,8 @@
 #define ATTR0_4BPP				 0	//!< Use 4bpp (16 color) tiles
 #define ATTR0_8BPP			0x2000	//!< Use 8bpp (256 color) tiles
 #define ATTR0_SQUARE			 0	//!< Square shape
-#define ATTR0_WIDE			0x4000	//!< Tall shape (height &gt; width)
-#define ATTR0_TALL			0x8000	//!< Wide shape (height &lt; width)
+#define ATTR0_WIDE			0x4000	//!< Wide shape (height &lt; width)
+#define ATTR0_TALL			0x8000	//!< Tall shape (height &gt; width)
 
 #define ATTR0_Y_MASK		0x00FF
 #define ATTR0_Y_SHIFT			 0
