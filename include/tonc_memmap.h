@@ -306,7 +306,7 @@
 
 //! \name Affine background parameters. (write only!)
 //\{
-#define REG_BG_AFFINE		((BG_AFFINE*)(REG_BASE+0x0000))	//!< Bg affine array
+#define REG_BG_AFFINE		((BG_AFFINE*)(REG_BASE+0x0020))	//!< Bg affine array
 
 #define REG_BG2PA			*(vs16*)(REG_BASE+0x0020)	//!< Bg2 matrix.pa
 #define REG_BG2PB			*(vs16*)(REG_BASE+0x0022)	//!< Bg2 matrix.pb
