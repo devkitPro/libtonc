@@ -51,7 +51,7 @@ BEGIN_FUNC_ARM(isr_master, CSEC_IWRAM)
 
 	@ --- If we're here, we have an isr ---
 
-	ldr		r3, [r0, #8]			@ Read IME 
+	ldrh	r3, [r0, #8]			@ Read IME 
 	strb	r0, [r0, #8]			@ Clear IME
 	bic		r2, ip, r2
 	strh	r2, [r0]				@ Clear current irq in IE
