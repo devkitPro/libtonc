@@ -46,10 +46,10 @@
 
 
 //! Put variable in IWRAM (default).
-#define IWRAM_DATA __attribute__((section(".iwram")))
+#define IWRAM_DATA __attribute__((section(".iwram_data")))
 
 //! Put variable in EWRAM.
-#define EWRAM_DATA __attribute__((section(".ewram")))
+#define EWRAM_DATA __attribute__((section(".ewram_data")))
 
 //! Put <b>non</b>-initialized variable in EWRAM.
 #define  EWRAM_BSS __attribute__((section(".sbss")))
