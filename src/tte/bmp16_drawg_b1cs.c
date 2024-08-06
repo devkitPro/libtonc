@@ -83,7 +83,7 @@ void bmp16_drawg_b1cos(uint gid)
 			for(ix=0; ix<8; ix++)
 				dstL[ix]= ((raw>>=1)&1) ? ink : paper;
 
-			dstL += dstP;
+			dstL += dstP/2;
 		}
 		srcL += srcP;
 	}
